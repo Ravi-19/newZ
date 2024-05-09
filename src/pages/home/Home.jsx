@@ -25,6 +25,7 @@ function Home() {
         }
         catch(e) {
             alert("please input a valid data ") ; 
+            console.log(e) ;
         }
         finally{
           ref.current.complete()  ;
