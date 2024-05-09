@@ -5,11 +5,9 @@ import NavBar from "../../components/navBar/NavBar";
 import LoadingBar from 'react-top-loading-bar'
 
 function Home() {
-   // const apiKey  = import.meta.env.VITE_APP_API_KEY ; 
-    const apiKey  = `de2f47b2be8541f78b61c71bf76d70dc` ; 
+    const apiKey  = import.meta.env.VITE_APP_API_KEY ; 
     const [query , setQuery] = useState('modi') ;
-  //  const date = import.meta.env.VITE_APP_DATE ; 
-    const date = `2024-04-09` ; 
+    const date = import.meta.env.VITE_APP_DATE ; 
     const newsUrl = `https://newsapi.org/v2/everything?q=${query}&from=${date}&sortBy=publishedAt&apiKey=${apiKey}` ; 
     let [newsArr ,setNewsArr] = useState([]) ; 
     const ref = useRef(null) ; 
